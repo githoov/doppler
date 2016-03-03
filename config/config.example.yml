@@ -1,0 +1,26 @@
+source_database:
+  host: mysql_host
+  port: 3306
+  database: 
+    - desired_database1
+    - desired_database2
+  user: mysql_user
+  password: mysql_password
+
+target_database:
+  host: redshift_host
+  port: 5439
+  database: 
+  user: redshift_user
+  password: redshift_password
+
+s3_bucket:
+  region: your_region
+  root_bucket: your_bucket
+  object_key_prefix: your_object_prefix   # file will be PUT to <root_bucket>/<object-key-prefix>/<file-name>
+  aws_access_key_id: your_key
+  aws_secret_access_key: your_secret
+
+json_schema_bucket:
+  root_bucket: your_bucket
+  object_key_prefix: your_object_prefix    # json schemas will be PUT to <root_bucket>/<object-key-prefix>/<schema-file-name>

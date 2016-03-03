@@ -1,0 +1,104 @@
+{ "table_name": "check",
+  "sort_style": "compound",
+  "distribution_style": "key",
+ 	"fields": [
+        {
+         "name": "id",
+         "type": "integer",
+         "encoding" : "lzo",
+         "sort": false,
+         "distribute": false
+        },
+        {
+         "name": "license_id",
+         "type": "integer",
+         "encoding" : "lzo",
+         "sort": false,
+         "distribute": false
+        },
+        {
+         "name": "check_type_id",
+         "type": "integer",
+         "encoding" : "lzo",
+         "sort": false,
+         "distribute": false
+        },
+        {
+         "name": "check_status_id",
+         "type": "integer",
+         "encoding" : "lzo",
+         "sort": false,
+         "distribute": false
+        },
+        {
+         "name": "last_check_status_id",
+         "type": "integer",
+         "encoding" : "lzo",
+         "sort": false,
+         "distribute": false
+        },
+        {
+         "name": "license_string",
+         "type": "varchar(255)",
+         "encoding" : "lzo",
+         "sort": false,
+         "distribute": false
+        },
+        {
+         "name": "mac_address",
+         "type": "varchar(255)",
+         "encoding" : "lzo",
+         "sort": false,
+         "distribute": false
+        },
+        {
+         "name": "passed_ip",
+         "type": "varchar(255)",
+         "encoding" : "lzo",
+         "sort": false,
+         "distribute": false
+        },        
+        {
+         "name": "measured_ip",
+         "type": "varchar(255)",
+         "encoding" : "lzo",
+         "sort": false,
+         "distribute": false
+        },
+        {
+         "name": "user_count",
+         "type": "integer",
+         "encoding" : "lzo",
+         "sort": false,
+         "distribute": false
+        },
+        {
+         "name": "query_count",
+         "type": "integer",
+         "encoding" : "lzo",
+         "sort": false,
+         "distribute": false
+        },
+        {
+         "name": "created_at",
+         "type": "timestamp",
+         "encoding" : "lzo",
+         "sort": true,
+         "distribute": false
+        },
+        {
+         "name": "app_version",
+         "type": "varchar(255)",
+         "encoding" : "lzo",
+         "sort": false,
+         "distribute": false
+        },
+        {
+         "name": "looker_instance_id",
+         "type": "integer",
+         "encoding" : "lzo",
+         "sort": false,
+         "distribute": true
+        }        
+        ]
+}
